@@ -7,6 +7,10 @@
     -webkit-text-stroke: 1px gray;
     text-stroke: 1px gray;
   }
+  .text-gradient {
+    @apply bg-gradient-to-l text-transparent from-red-300 to-cyan-300;
+    -webkit-background-clip: text;
+  }
 }
 
 * {
@@ -17,7 +21,7 @@
 
 body {
   background-color: rgb(249, 250, 251);
-  color: rgb(107 114 128);
+  color: rgb(107, 114, 128);
   overflow: hidden;
 }
 
@@ -26,12 +30,15 @@ body::after {
   animation: blurRegulation 10s infinite alternate;
 }
 
-
 @keyframes blurRegulation {
-  0%, 40%, 80% {
+  0%,
+  40%,
+  80% {
     filter: blur(5rem);
   }
-  20%, 60%, 100% {
+  20%,
+  60%,
+  100% {
     filter: blur(2rem);
   }
 }
@@ -81,11 +88,15 @@ body::after {
   }
 
   @keyframes blurRegulation {
-    0%, 40%, 80% {
+    0%,
+    40%,
+    80% {
       filter: blur(8rem);
     }
-    20%, 60%, 100% {
-      filter: blur(4rem);
+    20%,
+    60%,
+    100% {
+      filter: blur(3rem);
     }
   }
 }
