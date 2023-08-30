@@ -6,6 +6,7 @@
   .stroke {
     -webkit-text-stroke: 1px gray;
     text-stroke: 1px gray;
+    @apply text-transparent;
   }
   .text-gradient {
     @apply bg-gradient-to-l text-transparent from-red-300 to-cyan-300;
@@ -17,6 +18,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+input,
+textarea {
+  outline: none;
 }
 
 body {

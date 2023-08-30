@@ -7,7 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 export const Header = () => {
   return (
     <header className="p-2 text-center space-y-1">
-      <p className="text-red-400">Highblo@2023</p>
+      <p className="text-gradient">Highblo@2023</p>
       <ul className="flex justify-center gap-6">
         <li>
           <a href="#">

@@ -36,7 +36,7 @@ export const Navigation = () => {
   ];
 
   return (
-    <ul className="flex justify-center bg-white w-[96%] rounded-full text-sm font-bold fixed bottom-4 left-1/2 -translate-x-1/2 shadow-lg sm:justify-around sm:bottom-6 md:text-base xl:w-[80%] xl:justify-center xl:gap-28">
+    <ul className="flex justify-center bg-white w-[96%] rounded-full text-sm font-bold fixed bottom-3 left-1/2 -translate-x-1/2 shadow-lg sm:justify-around sm:bottom-6 md:text-base xl:w-[80%] xl:justify-center xl:gap-28">
       {navigationData.map(({ text, icon, path }) => (
         <li key={path}>
           <Link

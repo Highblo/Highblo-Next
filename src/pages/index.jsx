@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <section className="w-[92%] mx-auto mt-8 px-2 sm:mt-14 md:text-center">
       <div className=" space-y-4 sm:space-y-6">
-        <h1 className="text-6xl stroke text-transparent sm:text-7xl md:text-8xl">
+        <h1 className="text-6xl stroke sm:text-7xl md:text-8xl">
           Hello
           <br />
           I'm Highblo
