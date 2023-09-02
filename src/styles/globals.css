@@ -23,12 +23,12 @@
   }
 
   .bg-tamaki {
-    background-image: url('/images/tamaki.jpg');
+    background-image: url("/images/tamaki.jpg");
     background-position: center;
     background-size: cover;
   }
 
-  .blurRegulation {
+  .blur-regulation {
     animation: blurRegulation 10s infinite alternate;
   }
 }

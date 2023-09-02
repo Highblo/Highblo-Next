@@ -2,7 +2,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 
 const About = () => {
   return (
-    <div className="mt-3">
+    <section className="pt-6 lg:pt-16">
       <SectionTitle>About Me</SectionTitle>
       <div className="md:flex md:justify-center md:items-center md:h-[50vh]">
         <div className="w-[130px] h-[130px] mx-auto my-4 bg-tamaki rounded-full md:mx-6 md:w-[200px] md:h-[200px]"></div>
@@ -26,7 +26,7 @@ const About = () => {
           目標は自分のサービスを開発して収益化すること
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

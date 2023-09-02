@@ -4,9 +4,9 @@ import { AiFillYoutube } from "react-icons/ai";
 import { SiQiita } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 
-export const Header = () => {
+export const Footer = () => {
   return (
-    <header className="p-2 text-center space-y-1">
+    <footer className="py-4 pb-24 text-center space-y-1">
       <p className="text-gradient">Highblo@2023</p>
       <ul className="flex justify-center gap-6">
         <li>
@@ -35,6 +35,6 @@ export const Header = () => {
           </a>
         </li>
       </ul>
-    </header>
+    </footer>
   );
 };

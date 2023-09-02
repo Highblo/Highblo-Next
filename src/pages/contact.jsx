@@ -4,7 +4,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 
 const Contact = () => {
   return (
-    <div className="mt-3 px-6 md:w-[85%] md:mx-auto xl:w-[760px]">
+    <div className="p-6 md:w-[85%] md:mx-auto lg:pt-16 xl:w-[780px]">
       <SectionTitle>Contact</SectionTitle>
       <p className="md:mt-4 md:text-center">
         Webサイト・アプリケーション開発のご依頼、お伝えしたいことなどありましたらお気軽にお問い合わせ下さい。

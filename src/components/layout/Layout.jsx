@@ -1,12 +1,12 @@
 import { BgDesign } from "../BgDesign";
-import { Header } from "../Header";
+import { Footer } from "../Footer";
 import { Navigation } from "../Navigation";
 
 export const Layout = ({ children }) => {
   return (
     <>
-      <Header />
       {children}
+      <Footer />
       <Navigation />
       <BgDesign />
     </>
