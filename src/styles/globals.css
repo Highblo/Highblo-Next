@@ -4,24 +4,32 @@
 
 @layer utilities {
   .stroke {
+    @apply text-transparent;
     -webkit-text-stroke: 1px gray;
     text-stroke: 1px gray;
-    @apply text-transparent;
   }
+
   .text-gradient {
     @apply bg-gradient-to-l text-transparent from-red-300 to-cyan-300;
     -webkit-background-clip: text;
   }
+
   .bg-gradient1 {
     @apply bg-gradient-to-r from-purple-300 to-pink-400;
   }
+
   .bg-gradient2 {
     @apply bg-gradient-to-r from-sky-300 to-indigo-400;
   }
+
   .bg-tamaki {
     background-image: url('/images/tamaki.jpg');
     background-position: center;
     background-size: cover;
+  }
+
+  .blurRegulation {
+    animation: blurRegulation 10s infinite alternate;
   }
 }
 
@@ -44,12 +52,6 @@ textarea {
 body {
   background-color: rgb(249, 250, 251);
   color: rgb(107, 114, 128);
-  overflow: hidden;
-}
-
-body::before,
-body::after {
-  animation: blurRegulation 10s infinite alternate;
 }
 
 @keyframes blurRegulation {
@@ -65,50 +67,7 @@ body::after {
   }
 }
 
-body::before {
-  content: "";
-  background-color: #fbe2e3;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  height: 24rem;
-  width: 18rem;
-  border-radius: 9999px;
-  filter: blur(5rem);
-  z-index: -10;
-}
-
-body::after {
-  content: "";
-  background-color: #dbd7fb;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  height: 23rem;
-  width: 18rem;
-  border-radius: 9999px;
-  filter: blur(5rem);
-  z-index: -10;
-}
-
 @media (min-width: 640px) {
-  body::before,
-  body::after {
-    width: 60.75rem;
-    filter: blur(8rem);
-    height: 31.25rem;
-  }
-
-  body::before {
-    top: -3rem;
-    right: 2%;
-  }
-
-  body::after {
-    bottom: -3rem;
-    left: 2%;
-  }
-
   @keyframes blurRegulation {
     0%,
     40%,
