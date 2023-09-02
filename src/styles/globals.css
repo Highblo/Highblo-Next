@@ -18,6 +18,11 @@
   .bg-gradient2 {
     @apply bg-gradient-to-r from-sky-300 to-indigo-400;
   }
+  .bg-tamaki {
+    background-image: url('/images/tamaki.jpg');
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 * {
