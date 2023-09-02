@@ -12,12 +12,23 @@
     @apply bg-gradient-to-l text-transparent from-red-300 to-cyan-300;
     -webkit-background-clip: text;
   }
+  .bg-gradient1 {
+    @apply bg-gradient-to-r from-purple-300 to-pink-400;
+  }
+  .bg-gradient2 {
+    @apply bg-gradient-to-r from-sky-300 to-indigo-400;
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 input,
