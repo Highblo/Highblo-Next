@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsFillFilePersonFill } from "react-icons/bs";
-import { GiSkills } from "react-icons/gi";
+import { FaBlog } from "react-icons/fa";
 import { GiOpenTreasureChest } from "react-icons/gi";
 import { GrContact } from "react-icons/gr";
 
@@ -19,9 +19,9 @@ export const Navigation = () => {
       path: "/about",
     },
     {
-      text: "MySkill",
-      icon: <GiSkills size={22} />,
-      path: "/myskill",
+      text: "Myblogs",
+      icon: <FaBlog size={22} />,
+      path: "/myblogs",
     },
     {
       text: "Portfolio",

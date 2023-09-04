@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <section className="pt-6 lg:pt-16">
       <SectionTitle>Portfolio</SectionTitle>
-      <p className="text-center mb-1">随時追加する予定です</p>
+      <p className="text-center my-4 md:my-7">随時追加する予定です</p>
       <div className="w-[90%] mx-auto p-2 space-y-4 md:space-y-0 md:flex md:flex-wrap md:justify-around md:items-center">
         <DammyPortfolio
           bgGradient="bg-gradient1"

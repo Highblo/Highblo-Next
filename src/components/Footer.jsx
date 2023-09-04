@@ -6,11 +6,11 @@ import { AiFillGithub } from "react-icons/ai";
 
 export const Footer = () => {
   return (
-    <footer className="py-4 pb-24 text-center space-y-1">
-      <p className="text-gradient">Highblo@2023</p>
+    <footer className="py-3 mb-20 text-center space-y-1 sm:mb-32">
+      <span className="text-gradient">Highblo@2023</span>
       <ul className="flex justify-center gap-6">
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/haruharu._515/">
             <BsInstagram color="#eb7e63" className="text-2xl md:text-4xl" />
           </a>
         </li>
