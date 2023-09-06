@@ -1,13 +1,22 @@
+import { useInView } from "react-intersection-observer";
+
 import { SectionTitle } from "@/components/SectionTitle";
 import { Skill } from "@/components/Skill";
-import { favoriteSkills, skills } from "@/components/mySkillsData";
+import { favoriteSkills, skills } from "@/datas/mySkillsData";
 
 const About = () => {
+  const { ref, inView } = useInView({ threshold: 0.8, triggerOnce: true });
+
   return (
     <section className="pt-6 px-6 lg:pt-16">
       <SectionTitle>About Me</SectionTitle>
       <div className="md:flex md:justify-center md:items-center md:my-14">
-        <div className="w-[130px] h-[130px] mx-auto my-4 bg-tamaki rounded-full md:mx-6 md:w-[200px] md:h-[200px]"></div>
+        <div
+          className={`w-[130px] h-[130px] mx-auto my-4 bg-tamaki rounded-full scroll-animation2 ${
+            inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"
+          } md:mx-6 md:w-[200px] md:h-[200px]`}
+          ref={ref}
+        ></div>
         <p className="sm:text-lg sm:text-center md:text-start">
           1998年11月9日生まれの24歳
           <br />

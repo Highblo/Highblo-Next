@@ -31,6 +31,30 @@
   .blur-regulation {
     animation: blurRegulation 10s infinite alternate;
   }
+
+  .scroll-animation1 {
+    @apply transition-all duration-500;
+  }
+
+  .scroll-animation2 {
+    @apply transition-all duration-500 delay-75;
+  }
+
+  .scroll-animation3 {
+    @apply transition-all duration-500 delay-100;
+  }
+
+  .scroll-animation4 {
+    @apply transition-all duration-500 delay-150;
+  }
+
+  .scroll-animation5 {
+    @apply transition-all duration-500 delay-200;
+  }
+
+  .scroll-animation6 {
+    @apply transition-all duration-500 delay-300;
+  }
 }
 
 * {
