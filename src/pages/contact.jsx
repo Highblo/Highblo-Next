@@ -1,53 +1,92 @@
-import { Button } from "@/components/Button";
+import { Button } from "@/components/atom/Button";
 import { FormLayout } from "@/components/FormLayout";
-import { SectionTitle } from "@/components/SectionTitle";
+import { SectionTitle } from "@/components/atom/SectionTitle";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 const Contact = () => {
   return (
-    <div className="p-6 md:w-[85%] md:mx-auto lg:pt-16 xl:w-[780px]">
+    <div className="overflow-hidden p-6 md:w-[85%] md:mx-auto lg:pt-16 xl:w-[780px]">
       <SectionTitle>Contact</SectionTitle>
-      <p className="md:mt-4 md:text-center">
-        Webサイト・アプリケーション開発のご依頼、お伝えしたいことなどありましたらお気軽にお問い合わせ下さい。
-      </p>
+      <ScrollAnimation
+        transition="scroll-animation2"
+        before="opacity-0 translate-x-8"
+        after="opacity-100 translate-x-0"
+      >
+        <p className="md:mt-4 md:text-center">
+          Webサイト・アプリケーション開発のご依頼、お伝えしたいことなどありましたらお気軽にお問い合わせ下さい。
+        </p>
+      </ScrollAnimation>
       <form className="space-y-5 mt-6 md:space-y-10 md:mt-12">
-        <FormLayout>
-          <label htmlFor="name" className="w-[15%]">
-            名前
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="名前を入力してください"
-            className="w-[85%] p-2 rounded-md"
-          />
-        </FormLayout>
-        <FormLayout>
-          <label htmlFor="email" className="w-[15%]">
-            Email
-          </label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="メールアドレスを入力してください"
-            className="w-[85%] p-2 rounded-md"
-          />
-        </FormLayout>
-        <FormLayout>
-          <label htmlFor="message" id="message" className="w-[15%]">
-            内容
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            className="w-[85%] p-2 rounded-md"
-          ></textarea>
-        </FormLayout>
-        <Button text="text-gray-700" bg="bg-white">
-          送信
-        </Button>
-        <div>
+        <ScrollAnimation
+          transition="scroll-animation3"
+          before="opacity-0 translate-y-6"
+          after="opacity-100 translate-y-0"
+        >
+          <FormLayout>
+            <label htmlFor="name" className="w-[15%]">
+              名前
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="名前を入力してください"
+              className="w-[85%] p-2 rounded-md"
+            />
+          </FormLayout>
+        </ScrollAnimation>
+        <ScrollAnimation
+          transition="scroll-animation5"
+          before="opacity-0 translate-y-6"
+          after="opacity-100 translate-y-0"
+        >
+          <FormLayout>
+            <label htmlFor="email" className="w-[15%]">
+              Email
+            </label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="メールアドレスを入力してください"
+              className="w-[85%] p-2 rounded-md"
+            />
+          </FormLayout>
+        </ScrollAnimation>
+        <ScrollAnimation
+          transition="scroll-animation6"
+          before="opacity-0 translate-y-6"
+          after="opacity-100 translate-y-0"
+        >
+          <FormLayout>
+            <label htmlFor="message" id="message" className="w-[15%]">
+              内容
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              className="w-[85%] p-2 rounded-md"
+            ></textarea>
+          </FormLayout>
+        </ScrollAnimation>
+        <ScrollAnimation
+          transition="scroll-animation7"
+          before="opacity-0 translate-y-6"
+          after="opacity-100 translate-y-0"
+        >
+          <Button
+            text="text-gray-700"
+            bg="bg-white"
+            hover="hover:text-white hover:bg-gray-700"
+          >
+            送信
+          </Button>
+        </ScrollAnimation>
+        <ScrollAnimation
+          transition="scroll-animation8"
+          before="opacity-0 translate-y-6"
+          after="opacity-100 translate-y-0"
+        >
           <p className="text-xs mb-1 text-center">
             バックエンド実装していないので実際に送りたい場合はこちらから↓
           </p>
@@ -57,7 +96,7 @@ const Contact = () => {
           >
             メールフォームを起動する
           </a>
-        </div>
+        </ScrollAnimation>
       </form>
     </div>
   );

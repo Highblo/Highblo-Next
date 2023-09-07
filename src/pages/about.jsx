@@ -1,6 +1,6 @@
-import { SectionTitle } from "@/components/SectionTitle";
+import { SectionTitle } from "@/components/atom/SectionTitle";
 import { Skill } from "@/components/Skill";
-import { favoriteSkills, skills } from "@/datas/mySkillsData";
+import { favoriteSkills, skills } from "@/datas/mySkillsDatas";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { useInView } from "react-intersection-observer";
 

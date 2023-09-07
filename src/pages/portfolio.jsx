@@ -1,36 +1,25 @@
-import { DammyPortfolio } from "@/components/DammyPortfolio";
-import { SectionTitle } from "@/components/SectionTitle";
+import { DammyCard } from "@/components/DammyCard";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { SectionTitle } from "@/components/atom/SectionTitle";
 
 const Portfolio = () => {
   return (
-    <section className="pt-6 lg:pt-16">
+    <section className="overflow-hidden pt-6 lg:pt-16">
       <SectionTitle>Portfolio</SectionTitle>
-      <p className="text-center my-4 md:my-7">随時追加する予定です</p>
+      <ScrollAnimation
+        transition="scroll-animation2"
+        before="opacity-0 translate-x-8"
+        after="opacity-100 translate-x-0"
+      >
+        <p className="text-center my-4 md:my-7">随時追加する予定です</p>
+      </ScrollAnimation>
       <div className="w-[90%] mx-auto p-2 space-y-4 md:space-y-0 md:flex md:flex-wrap md:justify-around md:items-center">
-        <DammyPortfolio
-          bgGradient="bg-gradient1"
-          hoverBgGradient="hover:scale-100"
-        />
-        <DammyPortfolio
-          bgGradient="bg-gradient2"
-          hoverBgGradient="hover:scale-100"
-        />
-        <DammyPortfolio
-          bgGradient="bg-gradient1"
-          hoverBgGradient="hover:scale-100"
-        />
-        <DammyPortfolio
-          bgGradient="bg-gradient2"
-          hoverBgGradient="hover:scale-100"
-        />
-        <DammyPortfolio
-          bgGradient="bg-gradient1"
-          hoverBgGradient="hover:scale-100"
-        />
-        <DammyPortfolio
-          bgGradient="bg-gradient2"
-          hoverBgGradient="hover:scale-100"
-        />
+        <DammyCard bgGradient="bg-gradient1" hover="hover:scale-100" />
+        <DammyCard bgGradient="bg-gradient2" hover="hover:scale-100" />
+        <DammyCard bgGradient="bg-gradient1" hover="hover:scale-100" />
+        <DammyCard bgGradient="bg-gradient2" hover="hover:scale-100" />
+        <DammyCard bgGradient="bg-gradient1" hover="hover:scale-100" />
+        <DammyCard bgGradient="bg-gradient2" hover="hover:scale-100" />
       </div>
     </section>
   );
