@@ -49,7 +49,7 @@ const Home = () => {
           after="opacity-100 translate-x-0"
         >
           <h2 className="text-2xl sm:text-3xl">
-            I&apos;m a
+            I&apos;m a{" "}
             <span
               className="text-gradient text-3xl font-bold sm:text-4xl md:text-5xl"
               ref={el}
@@ -64,10 +64,21 @@ const Home = () => {
           after="opacity-100 translate-x-0"
         >
           <p className="mb-8 md:mb-12 md:text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora
-            enim eaque nobis omnis eum tempore, quibusdam suscipit! Nam sit
-            voluptates fugit ducimus labore quo. Magni repudiandae eius velit
-            sequi.
+            Hey there, everyone!
+            <br />
+            Unfortunately, there's nothing to write about!
+            <br />
+            I don't have many achievements because I'm still relatively
+            inexperienced, you know!
+            <br />
+            If anyone's willing to assign me a project, please get in touch!
+            <br />
+            Butit wouldn't be right to end it here, so I'll share some words I
+            hold dear:
+            <br />
+            'Consistency is the key.'
+            <br />
+            Everyone, let's keep doing something we love!
           </p>
         </ScrollAnimation>
         <div className="space-y-6 md:w-[80%] md:mx-auto">
