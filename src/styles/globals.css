@@ -63,6 +63,10 @@
   .scroll-animation8 {
     @apply transition-all duration-500 delay-500;
   }
+
+  .scroll-animation9 {
+    @apply transition-all duration-500 delay-[600ms];
+  }
 }
 
 * {
