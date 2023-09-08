@@ -76,7 +76,9 @@ const Home = () => {
             Butit wouldn't be right to end it here, so I'll share some words I
             hold dear:
             <br />
-            'Consistency is the key.'
+            <span className="text-gradient text-xl font-bold">
+              'Consistency is the key.'
+            </span>
             <br />
             Everyone, let's keep doing something we love!
           </p>
