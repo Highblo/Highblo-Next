@@ -1,7 +1,7 @@
 import { Button } from "@/components/atom/Button";
-import { FormLayout } from "@/components/FormLayout";
+import { FormLayout } from "@/components/atom/FormLayout";
 import { SectionTitle } from "@/components/atom/SectionTitle";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { ScrollAnimation } from "@/components/atom/ScrollAnimation";
 
 const Contact = () => {
   return (

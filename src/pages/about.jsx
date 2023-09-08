@@ -1,8 +1,10 @@
-import { SectionTitle } from "@/components/atom/SectionTitle";
-import { Skill } from "@/components/Skill";
-import { favoriteSkills, skills } from "@/datas/mySkillsDatas";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
+import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+
+import { favoriteSkills, skills } from "@/datas/mySkillsDatas";
+import { SectionTitle } from "@/components/atom/SectionTitle";
+import { ScrollAnimation } from "@/components/atom/ScrollAnimation";
+import { Skill } from "@/components/molecules/Skill";
 
 const About = () => {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -58,6 +60,7 @@ const About = () => {
               transition="scroll-animation1"
               before="opacity-0 translate-x-8"
               after="opacity-100 translate-x-0"
+              key={path}
             >
               <Skill imagePath={path} value={value} text={text} />
             </ScrollAnimation>
@@ -72,11 +75,14 @@ const About = () => {
               key={path}
               ref={ref}
             >
-              <img
-                src={`/images/${path}`}
-                alt="アイコン画像"
-                className="w-[20px]"
-              />
+              <div className="h-auto">
+                <Image
+                  src={`/images/${path}`}
+                  alt="アイコン画像"
+                  width={20}
+                  height={20}
+                />
+              </div>
               <p>{text}</p>
             </li>
           ))}

@@ -1,4 +1,4 @@
-import { ScrollAnimation } from "../ScrollAnimation";
+import { ScrollAnimation } from "./ScrollAnimation";
 
 export const SectionTitle = ({ children }) => {
   return (

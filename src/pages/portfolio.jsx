@@ -1,5 +1,5 @@
-import { DammyCard } from "@/components/DammyCard";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { DammyCard } from "@/components/atom/DammyCard";
+import { ScrollAnimation } from "@/components/atom/ScrollAnimation";
 import { SectionTitle } from "@/components/atom/SectionTitle";
 
 const Portfolio = () => {

@@ -2,11 +2,11 @@ import { useCallback, useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 import { Button } from "@/components/atom/Button";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { ScrollAnimation } from "@/components/atom/ScrollAnimation";
 
 const Home = () => {
   const el = useRef(null);
-  
+
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["fullstack engineer", "frontend engineer", "freedom lover"],
@@ -15,12 +15,12 @@ const Home = () => {
       loop: true,
       loopCount: Infinity,
     });
-    
+
     return () => {
       typed.destroy();
     };
   }, []);
-  
+
   const onClickOldSite = useCallback(() => {
     location.href = "https://haru-portfolio71.netlify.app/";
   }, []);
@@ -28,7 +28,7 @@ const Home = () => {
   const onClickCode = useCallback(() => {
     location.href = "https://github.com/Highblo/Highblo-Next";
   }, []);
-  
+
   return (
     <section className="p-6 overflow-hidden md:text-center lg:pt-16">
       <div className="space-y-4 sm:space-y-6">
