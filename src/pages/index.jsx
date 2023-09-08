@@ -66,21 +66,22 @@ const Home = () => {
           <p className="mb-8 md:mb-12 md:text-lg">
             Hey there, everyone!
             <br />
-            Unfortunately, there's nothing to write about!
+            Unfortunately, there&apos;s nothing to write about!
             <br />
-            I don't have many achievements because I'm still relatively
-            inexperienced, you know!
+            I don&apos;t have many achievements because I&apos;m still
+            relatively inexperienced, you know!
             <br />
-            If anyone's willing to assign me a project, please get in touch!
+            If anyone&apos;s willing to assign me a project, please get in
+            touch!
             <br />
-            Butit wouldn't be right to end it here, so I'll share some words I
-            hold dear:
+            Butit wouldn&apos;t be right to end it here, so I&apos;ll share some
+            words I hold dear:
             <br />
             <span className="text-gradient text-xl font-bold">
-              'Consistency is the key.'
+              &apos;Consistency is the key&apos;
             </span>
             <br />
-            Everyone, let's keep doing something we love!
+            Everyone, let&apos;s keep doing something we love!
           </p>
         </ScrollAnimation>
         <div className="space-y-6 md:w-[80%] md:mx-auto">
