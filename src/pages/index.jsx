@@ -40,7 +40,7 @@ const Home = () => {
           <h1 className="text-6xl stroke sm:text-7xl md:text-8xl">
             Hello
             <br />
-            I'm Highblo
+            I&apos;m Highblo
           </h1>
         </ScrollAnimation>
         <ScrollAnimation
@@ -49,7 +49,7 @@ const Home = () => {
           after="opacity-100 translate-x-0"
         >
           <h2 className="text-2xl sm:text-3xl">
-            I'm a{" "}
+            I&apos;m a
             <span
               className="text-gradient text-3xl font-bold sm:text-4xl md:text-5xl"
               ref={el}
