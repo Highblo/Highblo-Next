@@ -1,1 +1,1 @@
-[webサイト](URL "https://highblo.vercel.app/")
+https://highblo.vercel.app/
